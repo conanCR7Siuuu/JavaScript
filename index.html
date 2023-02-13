@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<html lang="es">
+<script src="./funciones.js"></script>
+    <head>
+        <title>Pruebas JS</title>
+    </head>
+    <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
+        <h1>Pruebas JS</h1>
+        <h2>Mostrar Nombre</h2>
+        <label for="firstname">Introduce tu nombre:</label> <input type="text" id="firstname" name="nombre"
+         onchange="mostrarNombre(this)"/>
+        <div id="resultado"></div>
+        <h2>Suma</h2>
+	        <b>Introduce el primer número: </b><br>
+	        <input type="text" id="textIn1" placeholder="Put a number"/><br>
+	        <b>Introduce el segundo número: </b><br>
+	        <input type="text" id="textIn2" placeholder="Put a number"/><br><br>
+	        <input type="button" id="btnSum" value="Calculate SUM" onClick="suma('textIn1','textIn2')"/>
+            <div id="resultado_suma"></div>
 </body>
+
+
+    </body>
 </html>

@@ -2,24 +2,42 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <html lang="es">
+    <link rel="stylesheet" href="pruebas.css">
 <script src="./funciones.js"></script>
     <head>
-        <title>Pruebas JS</title>
+        <div class="hero-nav">
+            <div class="hero-nav__inner">
+                <h1>Pruebas JavaScript</h1>
+                <div class="hero-nav__button">
+                    <a href="#" class="btn"></a>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
     </head>
     <body>
-
-        <h1>Pruebas JS</h1>
-        <h2>Mostrar Nombre</h2>
-        <label for="firstname">Introduce tu nombre:</label> <input type="text" id="firstname" name="nombre"
-         onchange="mostrarNombre(this)"/>
-        <div id="resultado"></div>
-        <h2>Suma</h2>
-	        <b>Introduce el primer número: </b><br>
-	        <input type="text" id="textIn1" placeholder="Put a number"/><br>
-	        <b>Introduce el segundo número: </b><br>
-	        <input type="text" id="textIn2" placeholder="Put a number"/><br><br>
-	        <input type="button" id="btnSum" value="Calculate SUM" onClick="suma('textIn1','textIn2')"/>
-            <div id="resultado_suma"></div>
+        <div class="Ejercicio">
+            <div class="titulo"><h2>Mostrar Nombre</h2></div>
+            <br>
+            <div><label for="firstname">Introduce tu nombre:</label> <input type="text" id="firstname" name="nombre"
+                onchange="mostrarNombre(this)"/>
+            <div id="resultado"></div></div>
+            <br>
+        </div>
+        <br>
+        <div class="Ejercicio">
+            <div class="titulo"><h2>Suma</h2></div>
+            <br>
+            <div>
+                <b>Introduce el primer número: </b><br>
+                <input type="text" id="textIn1" placeholder="Put a number"/><br><br>
+                <b>Introduce el segundo número: </b><br>
+                <input type="text" id="textIn2" placeholder="Put a number"/><br><br>
+                <input type="button" id="btnSum" value="Calculate SUM" onClick="suma('textIn1','textIn2')"/>
+                <div id="resultado_suma"></div><br></div>
+        </div>
+        
+        
 </body>
 
 

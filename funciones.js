@@ -18,3 +18,14 @@ function suma(numero1, numero2) {
         document.getElementById("resultado_suma").innerHTML = sum;
     }
 }
+
+function contarNumeros(){
+    var limite = 10;
+    for(var i=0; i<limite ; i++){
+        document.getElementById("contarNumeros").innerHTML += " " + i;
+    }
+}
+
+function limpiar(elemento){
+    document.getElementById(elemento).innerHTML = "";
+}

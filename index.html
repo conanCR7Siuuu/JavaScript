@@ -33,8 +33,16 @@
                 <input type="text" id="textIn1" placeholder="Put a number"/><br><br>
                 <b>Introduce el segundo número: </b><br>
                 <input type="text" id="textIn2" placeholder="Put a number"/><br><br>
-                <input type="button" id="btnSum" value="Calculate SUM" onClick="suma('textIn1','textIn2')"/>
+                <input type="button" id="btnSum" value="Calculate SUM" onClick="suma('textIn1','textIn2');"/>
                 <div id="resultado_suma"></div><br></div>
+        </div>
+        <div class="Ejercicio">
+            <div class="titulo"><h2>Contar Numeros</h2></div>
+            <br>
+            <div>
+                <button type="button" id="boton_contar" onClick="contarNumeros();">Contar</button>
+                <button type="button" id="boton_limpiar" onClick="limpiar('contarNumeros');">Limpiar</button>
+                <div id="contarNumeros"></div><br></div>
         </div>
         
         
